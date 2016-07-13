@@ -86,7 +86,10 @@
     "webpack": "^1.13.0"
   },
   "dependencies": {
+    "blacklist": "^1.1.2",
     "classnames": "^2.2.5",
-    "react": "^15.0.1"
+    "react": "^15.0.1",
+    "zooid-form-field": "^1.0.3",
+    "zooid-form-label": "^1.0.1"
   }
 }
