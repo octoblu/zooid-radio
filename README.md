@@ -1,9 +1,12 @@
 # zooid-radio
 
 [![Build Status](https://travis-ci.org/octoblu/zooid-radio.svg?branch=master)](https://travis-ci.org/octoblu/zooid-radio)
-[![npm version](https://badge.fury.io/js/zooid-radio.svg)](http://badge.fury.io/js/zooid-radio)
-[![Code Climate](https://codeclimate.com/github/octoblu/zooid-radio.png)](https://codeclimate.com/github/octoblu/zooid-radio)
+[![Test Coverage](https://codecov.io/gh/octoblu/zooid-radio/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/zooid-radio)
+[![Dependency status](http://img.shields.io/david/octoblu/zooid-radio.svg?style=flat)](https://david-dm.org/octoblu/zooid-radio)
+[![devDependency Status](http://img.shields.io/david/dev/octoblu/zooid-radio.svg?style=flat)](https://david-dm.org/octoblu/zooid-radio#info=devDependencies)
 [![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
+
+[![NPM](https://nodei.co/npm/zooid-radio.svg?style=flat)](https://npmjs.org/package/zooid-radio)
 
 ## Install
 ```
