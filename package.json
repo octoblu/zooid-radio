@@ -7,7 +7,7 @@
     "build": "webpack",
     "build:storybook": "build-storybook -o storybook-build",
     "clean": "rimraf lib dist coverage",
-    "coverage": "nyc report --reporter=lcov",
+    "coverage": "nyc npm test",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     "lint:js": "eslint src stories",
@@ -16,8 +16,9 @@
     "lint:css:fix": "stylefmt ./src/**/*.css",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9001",
-    "test": "nyc --require babel-core/register --require babel-polyfill mocha",
-    "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
+    "test": "mocha",
+    "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-",
+    "mocha:json": "mocha --reporter json > coverage/mocha.json"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,19 @@
     "exclude": [
       "src/**/*.spec.js",
       "src/**/*.css"
+    ],
+    "cache": true,
+    "reporter": [
+      "text-summary",
+      "lcov",
+      "json"
+    ],
+    "require": [
+      "babel-core/register",
+      "babel-polyfill"
+    ],
+    "extension": [
+      ".coffee"
     ]
   },
   "devDependencies": {
